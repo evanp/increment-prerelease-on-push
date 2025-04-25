@@ -19,6 +19,11 @@ jobs:
         with:
           node-version: 20
 
+      - name: Configure git user
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Bump dev prerelease version
         run: |
           npm version prerelease --preid dev -m "ci: bump dev tag to %s [skip ci]"
