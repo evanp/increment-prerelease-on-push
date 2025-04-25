@@ -1,6 +1,6 @@
 {
   "name": "increment-prerelease-on-push",
-  "version": "0.1.0-dev.2",
+  "version": "0.1.0-dev.3",
   "description": "a project to test incremental prerelease tags",
   "main": "index.js",
   "scripts": {
