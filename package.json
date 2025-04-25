@@ -1,0 +1,19 @@
+{
+  "name": "increment-prerelease-on-push",
+  "version": "0.1.0-dev.0",
+  "description": "a project to test incremental prerelease tags",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanp/increment-prerelease-on-push.git"
+  },
+  "author": "Evan Prodromou",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/evanp/increment-prerelease-on-push/issues"
+  },
+  "homepage": "https://github.com/evanp/increment-prerelease-on-push#readme"
+}
