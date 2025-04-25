@@ -1,0 +1,25 @@
+# .github/workflows/dev-tag.yml
+name: Create dev tag
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Bump dev prerelease version
+        run: |
+          npm version prerelease --preid dev -m "ci: bump dev tag to %s [skip ci]"
+          git push --follow-tags
